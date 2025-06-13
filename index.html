@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ultimate Productivity Hub</title>
+</head>
+<body>
+<div class="app-container">
+    <header>
+        <h1>🧠 Productivity Hub</h1>
+        <nav>
+    <link rel="stylesheet" href="style.css" />
+
+            <button id="btn-todo" class="nav-btn active">To-Do List</button>
+            <button id="btn-timer" class="nav-btn">Timer</button>
+            <button id="btn-quotes" class="nav-btn">Quotes</button>
+            <button id="btn-stats" class="nav-btn">Statistics</button>
+            <button id="btn-theme" class="nav-btn">Toggle Dark Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- To-Do Section -->
+        <section id="section-todo" class="section active">
+            <h2>📝 To-Do List</h2>
+            <div id="todo-controls">
+                <input type="text" id="todo-input" placeholder="add a new Task"/>
+                <select id="todo-priority">
+                    <option value="none">Priority</option>
+                    <option value="low">Low 🔵</option>
+                    <option value="medium">Medium 🟠</option>
+                    <option value="high">High 🔴</option>
+                </select>
+                <button id="add-todo-btn">Add Task</button>
+                <button id="clear-completed-btn">Clear Completed</button>
+                <button id="filter-all-btn" class="filter-btn active">All</button>
+                <button id="filter-active-btn" class="filter-btn">Active</button>
+                <button id="filter-completed-btn" class="filter-btn">Completed</button>
+            </div>
+            <ul id="todo-list"></ul>
+        </section>
+
+        <!-- Timer Section -->
+        <section id="section-timer" class="section">
+            <h2> Focus Timer</h2>
+            <div id="timer-controls">
+                <input type="number" id="timer-minutes" min="1" max="120" value="25" />
+                <button id="start-timer-btn">Start</button>
+                <button id="pause-timer-btn" disabled>Pause</button>
+                <button id="reset-timer-btn">Reset</button>
+                <select id="timer-sound-select">
+                    <option value="none">No Sound</option>
+                    <option value="bell">Bell </option>
+                    <option value="alarm">Alarm </option>
+                    <option value="chime">  Chime </option>
+                </select>
+            </div>
+            <div id="timer-display">25:00</div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="section-quotes" class="section">
+            <h2>🌟 Motivational Quotes</h2>
+            <blockquote id="quote-text">"The best way to get started is to quit talking and begin doing." – Walt Disney</blockquote>
+            <button id="new-quote-btn"><strong> <i>New Quote </i> </strong></button>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="section-stats" class="section">
+            <h2>📊 Productivity Stats</h2>
+            <p>Tasks Completed: <span id="stats-tasks-completed">0</span></p>
+            <p>Total Focus Time: <span id="stats-focus-time">0</span> minutes</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 <i>(Codify) Productivity Hub </i></p>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
