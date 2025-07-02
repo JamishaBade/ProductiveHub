@@ -20,10 +20,11 @@ body {
   background: white;
   border-radius: 12px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    align-content: center;
   display: flex;
   flex-direction: column;
   padding: 1.5rem 2rem;
-  align-content:center;
+
 }
 
 header {
