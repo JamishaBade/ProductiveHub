@@ -23,6 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1.5rem 2rem;
+  align-content:center;
 }
 
 header {
