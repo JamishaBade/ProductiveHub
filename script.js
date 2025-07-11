@@ -1,6 +1,6 @@
 // script.js
 
-// ----------- Section Toggle -----------
+// This is the toggle section.
 const navButtons = document.querySelectorAll('.nav-btn');
 const sections = document.querySelectorAll('.section');
 
@@ -19,12 +19,12 @@ navButtons.forEach((btn) => {
     });
 });
 
-// ----------- Dark Mode Toggle -----------
+// Dark mode toggle secution
 document.getElementById('btn-theme').addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
 });
 
-// ----------- To-Do List Logic -----------
+// TO DO LIST FUNCTIONALITIES
 const todoInput = document.getElementById('todo-input');
 const todoPriority = document.getElementById('todo-priority');
 const addTodoBtn = document.getElementById('add-todo-btn');
@@ -55,7 +55,7 @@ clearCompletedBtn.addEventListener('click', () => {
     updateStats();
 });
 
-// Filter Buttons
+//Filterbutton
 const filterButtons = document.querySelectorAll('.filter-btn');
 filterButtons.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -80,7 +80,7 @@ function updateStats() {
     document.getElementById('stats-tasks-completed').textContent = completed;
 }
 
-// ----------- Timer Logic -----------
+//TIMER
 const timerDisplay = document.getElementById('timer-display');
 const startBtn = document.getElementById('start-timer-btn');
 const pauseBtn = document.getElementById('pause-timer-btn');
@@ -148,13 +148,16 @@ function playSound() {
     audio.play();
 }
 
-// ----------- Quotes Logic -----------
+// Motivational quotes
 const quotes = [
     "Push yourself, because no one else is going to do it for you.",
     "Don’t stop when you’re tired. Stop when you’re done.",
     "It’s going to be hard, but hard does not mean impossible.",
     "Great things never come from comfort zones.",
-    "Success doesn’t just find you. You have to go out and get it."
+    "Success doesn’t just find you. You have to go out and get it.",
+    "You can do it.",
+    "Lock in. Lock in. Lock in."
+    
 ];
 
 document.getElementById('new-quote-btn').addEventListener('click', () => {
